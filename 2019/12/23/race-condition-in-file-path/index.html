@@ -5,13 +5,17 @@
   
 
   
-  <title>Melody 的研究所</title>
+  <title>Race condition in file path | Melody 的研究所</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Melody 的研究所">
-<meta property="og:url" content="https://melody.ac/index.html">
+  <meta name="description" content="Liveoverflow 上看到的小知识，题目来自 35c3 ctf logrotate，感觉在许多地方见过类似的代码，以后要留心类似的问题。 Tl;dr 同一个 filepath 在一个流程中被反复使用，都可能导致 race 的问题。 Example code12345678910111213141516171819202122#include &lt;stdio.h&gt;#include &amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Race condition in file path">
+<meta property="og:url" content="https://melody.ac/2019/12/23/race-condition-in-file-path/index.html">
 <meta property="og:site_name" content="Melody 的研究所">
+<meta property="og:description" content="Liveoverflow 上看到的小知识，题目来自 35c3 ctf logrotate，感觉在许多地方见过类似的代码，以后要留心类似的问题。 Tl;dr 同一个 filepath 在一个流程中被反复使用，都可能导致 race 的问题。 Example code12345678910111213141516171819202122#include &lt;stdio.h&gt;#include &amp;">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-12-23T05:56:07.492Z">
+<meta property="article:modified_time" content="2019-12-23T05:56:07.492Z">
 <meta property="article:author" content="Melody Chen">
 <meta name="twitter:card" content="summary">
   
@@ -64,9 +68,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-race-condition-in-file-path" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-race-condition-in-file-path" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/12/23/race-condition-in-file-path/" class="article-date">
   <time datetime="2019-12-23T05:56:07.492Z" itemprop="datePublished">2019-12-23</time>
@@ -79,8 +81,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/23/race-condition-in-file-path/">Race condition in file path</a>
+    <h1 class="article-title" itemprop="name">
+      Race condition in file path
     </h1>
   
 
@@ -124,11 +126,9 @@
     </footer>
   </div>
   
-</article>
-
-
+    
   
-
+</article>
 
 </section>
         
